@@ -56,7 +56,7 @@ a {
 }
 
 .banner {
-  height: calc(var(--vh, 1vh) * 100 - 465px);
+  height: calc((var(--vh, 1vh) * 100) - 465px);
   background-image: url('../../images/Banner.png');
   display: flex;
 
@@ -207,7 +207,7 @@ footer {
   }
   .main-content-wrapper {
     display: flex;
-    height: calc(var(--vh, 1vh) * 100 - 25em);
+    height: calc((var(--vh, 1vh) * 100) - 25em);
 
     .main-content-divs {
       height: auto;
