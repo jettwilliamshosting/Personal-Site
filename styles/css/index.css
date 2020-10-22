@@ -6,8 +6,15 @@
   margin: 0;
 }
 
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
 html {
   overflow: hidden;
+  height: -webkit-fill-available;
 }
 
 h2 {
