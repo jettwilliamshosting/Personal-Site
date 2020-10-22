@@ -11,14 +11,11 @@ $off-black: #262424;
 }
 
 body {
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available
+  height: 100vh;
 }
 
 html  {
   overflow: hidden;
-  height: -webkit-fill-available;
 }
 
 h2 {
@@ -61,7 +58,7 @@ a {
 }
 
 .banner {
-  height: calc(100vh - 465px);
+  height: calc(var(--vh, 1vh) * 100 - 465px);
   background-image: url('../../images/Banner.png');
   display: flex;
 
@@ -212,7 +209,7 @@ footer {
   }
   .main-content-wrapper {
     display: flex;
-    height: calc(100vh - 25em);
+    height: calc(var(--vh, 1vh) * 100 - 25em);
 
     .main-content-divs {
       height: auto;
