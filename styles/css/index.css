@@ -6,11 +6,9 @@
   margin: 0;
 }
 
-body {
-  height: 100vh;
-}
-
-html {
+html, body {
+  margin: 0;
+  height: 100%;
   overflow: hidden;
 }
 
