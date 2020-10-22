@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  font-family: "Shrikhand", cursive;
+  color: #262424;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+h2 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  width: 5em;
+  height: 5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  height: calc(100vh - 465px);
+  background-image: url("../../images/Banner.png");
+  display: flex;
+}
+.banner h1 {
+  margin-bottom: 0.5em;
+}
+.banner .logo {
+  height: 5em;
+  width: 5em;
+}
+
+.main-content-divs {
+  height: 155px;
+}
+
+.music {
+  background-image: url("../../images/Music.png");
+}
+.music h2 {
+  position: relative;
+  bottom: -0.5em;
+}
+.music .applemusic {
+  background-image: url("../../images/Applemusic.png");
+  margin-right: 1em;
+  height: 4.5em;
+  width: 4.5em;
+}
+.music .spotify {
+  background-image: url("../../images/Spotify.png");
+  margin-left: 1em;
+}
+.music .music-slide-div {
+  position: relative;
+  left: -100%;
+  transition: transform 0.2s ease;
+}
+.music:hover h2 {
+  display: none;
+}
+.music:hover .music-slide-div {
+  display: flex;
+  transform: translateX(100%);
+}
+
+.socials {
+  background-image: url("../../images/Socials.png");
+}
+.socials h2 {
+  position: relative;
+  bottom: -0.5em;
+}
+.socials .twitter {
+  background-image: url("../../images/Twitter.png");
+  margin-right: 1em;
+}
+.socials .facebook {
+  background-image: url("../../images/Facebook.png");
+  margin-left: 1em;
+  height: 4.3em;
+  width: 4.3em;
+}
+.socials .socials-slide-div {
+  position: relative;
+  left: -100%;
+  transition: transform 0.2s ease;
+}
+.socials:hover h2 {
+  display: none;
+}
+.socials:hover .socials-slide-div {
+  display: flex;
+  transform: translateX(100%);
+}
+
+.contact {
+  background-image: url("../../images/Contact.png");
+}
+.contact .email {
+  background-image: url("../../images/Email.png");
+}
+.contact .contact-slide-div {
+  position: relative;
+  left: -100%;
+  transition: transform 0.2s ease;
+}
+.contact:hover h2 {
+  display: none;
+}
+.contact:hover .contact-slide-div {
+  display: flex;
+  transform: translateX(100%);
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 41.5%;
+  font-size: 5pt;
+  text-align: center;
+}
+footer span {
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+}
+
+@media (min-width: 660px) {
+  footer {
+    left: 44%;
+  }
+}
+@media (min-width: 750px) {
+  h2 {
+    font-size: 20pt;
+  }
+
+  .banner {
+    height: 25em;
+    background-image: url("../../images/Banner2.png");
+  }
+  .banner h1 {
+    font-size: 40pt;
+  }
+  .banner .logo {
+    width: 8em;
+    height: 8em;
+  }
+
+  .main-content-wrapper {
+    display: flex;
+    height: calc(100vh - 25em);
+  }
+  .main-content-wrapper .main-content-divs {
+    height: auto;
+  }
+  .main-content-wrapper .music, .main-content-wrapper .contact, .main-content-wrapper .socials {
+    flex-basis: 100%;
+  }
+  .main-content-wrapper .music {
+    background-image: url("../../images/Music2.png");
+  }
+  .main-content-wrapper .socials {
+    background-image: url("../../images/Socials2.png");
+  }
+  .main-content-wrapper .contact {
+    background-image: url("../../images/Contact2.png");
+  }
+}
+@media (min-width: 1000px) {
+  footer {
+    left: 45.5%;
+    font-size: 7pt;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

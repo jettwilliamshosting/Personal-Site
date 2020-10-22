@@ -1,0 +1,234 @@
+$off-black: #262424;
+
+* {
+  box-sizing: border-box;
+
+  font-family: 'Shrikhand', cursive;
+  color: $off-black;
+
+  padding: 0;
+  margin: 0;
+}
+
+html  {
+  overflow: hidden;
+}
+
+h2 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  width: 5em;
+  height: 5em;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  height: calc(100vh - 465px);
+  background-image: url('../../images/Banner.png');
+  display: flex;
+
+  h1 {
+    margin-bottom: .5em;
+  }
+
+  .logo {
+    height: 5em;
+    width: 5em;
+  }
+}
+
+.main-content-divs {
+  height: 155px;
+}
+
+.music {
+  background-image: url('../../images/Music.png');
+
+  h2 {
+    position: relative;
+    bottom: -.5em;
+  }
+
+  .applemusic {
+    background-image: url('../../images/Applemusic.png');
+    margin-right: 1em;
+    height: 4.5em;
+    width: 4.5em;
+  }
+  .spotify {
+    background-image: url('../../images/Spotify.png');
+    margin-left: 1em;
+  }
+  .music-slide-div {
+    position: relative;
+    left: -100%;
+    transition: transform .2s ease;
+  }
+  &:hover {
+    h2 {
+      display: none;
+    }
+    .music-slide-div {
+      display: flex;
+      transform: translateX(100%);
+    }
+  }
+}
+
+.socials {
+  background-image: url('../../images/Socials.png');
+
+  h2 {
+    position: relative;
+    bottom: -.5em;
+  }
+
+  .twitter {
+    background-image: url('../../images/Twitter.png');
+    margin-right: 1em;
+  }
+  .facebook {
+    background-image: url('../../images/Facebook.png');
+    margin-left: 1em;
+    height: 4.3em;
+    width: 4.3em;
+  }
+  .socials-slide-div {
+    position: relative;
+    left: -100%;
+    transition: transform .2s ease;
+  }
+
+  &:hover {
+    h2 {
+      display: none;
+    }
+    .socials-slide-div {
+      display: flex;
+      transform: translateX(100%);
+    }
+  }
+}
+
+.contact {
+  background-image: url('../../images/Contact.png');
+
+  .email {
+    background-image: url('../../images/Email.png');
+  }
+  .contact-slide-div {
+    position: relative;
+    left: -100%;
+    transition: transform .2s ease;
+  }
+
+  &:hover {
+    h2 {
+      display: none;
+    }
+    .contact-slide-div {
+      display: flex;
+      transform: translateX(100%);
+    }
+  }
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 41.5%;
+  font-size: 5pt;
+  text-align: center;
+  span {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+  }
+}
+
+@media (min-width: 660px ) {
+  footer {
+    left: 44%;
+  }
+}
+
+@media (min-width: 750px ) {
+  h2 {
+    font-size: 20pt;
+  }
+  .banner {
+    height: 25em;
+    background-image: url('../../images/Banner2.png');
+    h1 {
+      font-size: 40pt;
+    }
+    .logo {
+      width: 8em;
+      height: 8em;
+    }
+  }
+  .main-content-wrapper {
+    display: flex;
+    height: calc(100vh - 25em);
+
+    .main-content-divs {
+      height: auto;
+    }
+
+    .music, .contact, .socials {
+      flex-basis: 100%;
+    }
+    .music {
+      background-image: url('../../images/Music2.png');
+    }
+    .socials {
+      background-image: url('../../images/Socials2.png');
+    }
+    .contact {
+      background-image: url('../../images/Contact2.png');
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  footer {
+    left: 45.5%;
+    font-size: 7pt;
+  }
+}
