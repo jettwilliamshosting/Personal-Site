@@ -50,7 +50,7 @@ a {
 }
 
 .banner {
-  height: calc((var(--vh, 1vh) * 100) - 465px);
+  height: calc((var(--vh, 1vh) * 100) - 21em);
   background-image: url("../../images/Banner.png");
   display: flex;
 }
@@ -63,7 +63,7 @@ a {
 }
 
 .main-content-divs {
-  height: 155px;
+  height: 7em;
 }
 
 .music {
