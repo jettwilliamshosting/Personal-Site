@@ -58,7 +58,8 @@ a {
 }
 
 .banner {
-  height: calc((var(--vh, 1vh) * 100) / 2);
+  // height: calc((var(--vh, 1vh) * 100) / 2);
+  height: 50%;
   background-image: url('../../images/Banner.png');
   display: flex;
 
@@ -72,8 +73,13 @@ a {
   }
 }
 
+.main-content-wrapper {
+  height: 100%;
+}
+
 .main-content-divs {
-  height: calc(((var(--vh, 1vh) * 100) / 2) / 3);
+  // height: calc(((var(--vh, 1vh) * 100) / 2) / 3);
+  height: calc(50% / 3);
 }
 
 .music {
@@ -209,7 +215,8 @@ footer {
   }
   .main-content-wrapper {
     display: flex;
-    height: calc((var(--vh, 1vh) * 100) - 25em);
+    // height: calc((var(--vh, 1vh) * 100) - 25em);
+    height: calc(100% - 25em);
 
     .main-content-divs {
       height: auto;
