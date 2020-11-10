@@ -10,8 +10,7 @@ window.addEventListener('resize', () => {
 });
 
 window.addEventListener('orientationchange', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  window.scroll(0, 100);
 });
 
 $(window).on('touchmove', function () {
