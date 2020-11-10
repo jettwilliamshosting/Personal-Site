@@ -178,7 +178,7 @@ footer {
   display: block;
   position: absolute;
   bottom: 0;
-  left: 41.5%;
+  left: 38.5%;
   font-size: 5pt;
   text-align: center;
   span {
@@ -198,7 +198,7 @@ footer {
   }
 }
 
-@media (min-width: 750px ) {
+@media (min-width: 824px ) {
   h2 {
     font-size: 20pt;
   }
@@ -241,5 +241,25 @@ footer {
   footer {
     left: 45.5%;
     font-size: 7pt;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 824px){
+  a {
+    width: 3em;
+    height: 3em;
+  }
+  .applemusic {
+    width: 2.7em !important;
+    height: 2.7em !important;
+  }
+  .facebook {
+    width: 2.7em !important;
+    height: 2.7em !important;
+  }
+
+  footer {
+    font-size: 3pt;
+    left: 46%;
   }
 }
